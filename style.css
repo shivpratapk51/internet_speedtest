@@ -28,6 +28,7 @@ body {
     background-color: #223140;
     border-radius: 24px;
     text-align: center;
+    box-shadow: -16px 16px 16px 8px rgba(0, 0, 0, 0.2);
 }
 
 .loader-widget {
@@ -42,7 +43,7 @@ body {
     width: 240px;
     border-radius: 50%;
     background: conic-gradient(rgba(1, 182, 190, 0.3) 0%, transparent 60%);
-    animation: radarRotate 2s linear;
+    animation: radarRotate 2s linear infinite;
 }
 
 @keyframes radarRotate {
@@ -94,6 +95,12 @@ body {
     box-shadow: 0 0 12px #81ecec;
 }
 
+.loader-content.result button{
+    height: 120px;
+    width: 120px;
+    margin-top: 16px;
+}
+
 .loader-content button:hover{
     background-color: #1f3c4e;
 }
@@ -143,7 +150,6 @@ body {
 .content small{
     font-size: 40%;
 }
-
 
 
 
